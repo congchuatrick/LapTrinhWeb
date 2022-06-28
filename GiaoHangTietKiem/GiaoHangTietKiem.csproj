@@ -850,6 +850,21 @@
     <Content Include="Views\Admin\DetailsStoreHouse.cshtml" />
     <Content Include="Views\Admin\EditStoreHouse.cshtml" />
     <Content Include="Views\Admin\DeleteStoreHouse.cshtml" />
+    <Content Include="Views\Admin\IndexGoods.cshtml" />
+    <Content Include="Views\Admin\CreateGoods.cshtml" />
+    <Content Include="Views\Admin\DetailsGoods.cshtml" />
+    <Content Include="Views\Admin\EditGoods.cshtml" />
+    <Content Include="Views\Admin\DeleteGoods.cshtml" />
+    <Content Include="Views\Admin\IndexCommend.cshtml" />
+    <Content Include="Views\Admin\CreateCommend.cshtml" />
+    <Content Include="Views\Admin\DetailsCommend.cshtml" />
+    <Content Include="Views\Admin\EditCommend.cshtml" />
+    <Content Include="Views\Admin\DeleteCommend.cshtml" />
+    <Content Include="Views\Admin\IndexDepartment.cshtml" />
+    <Content Include="Views\Admin\CreateDepartment.cshtml" />
+    <Content Include="Views\Admin\DetailsDepartment.cshtml" />
+    <Content Include="Views\Admin\EditDepartment.cshtml" />
+    <Content Include="Views\Admin\DeleteDepartment.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Code\" />

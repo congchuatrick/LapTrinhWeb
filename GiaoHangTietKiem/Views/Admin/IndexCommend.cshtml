@@ -1,0 +1,58 @@
+﻿@model IEnumerable<GiaoHangTietKiem.TuyenDuong>
+
+@{
+    ViewBag.Title = "IndexCommend";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>IndexCommend</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TenTD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ThoiGian)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaKhoBD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaKhoKT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaLVC)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenTD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ThoiGian)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaKhoBD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaKhoKT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaLVC)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditCommend", new { id=item.MaTD }) |
+            @Html.ActionLink("Details", "DetailsCommend", new { id=item.MaTD }) |
+            @Html.ActionLink("Delete", "DeleteCommend", new { id=item.MaTD })
+        </td>
+    </tr>
+}
+
+</table>

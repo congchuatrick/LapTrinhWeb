@@ -1,0 +1,59 @@
+﻿@model GiaoHangTietKiem.HangHoa
+
+@{
+    ViewBag.Title = "DetailsGoods";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>DetailsGoods</h2>
+
+<div>
+    <h4>HangHoa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenHH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenHH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MoTa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoTa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DonVT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DonVT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaLHH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaLHH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GiaTien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GiaTien)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "EditGoods", new { id = Model.MaHH }) |
+    @Html.ActionLink("Back to List", "IndexGoods")
+</p>

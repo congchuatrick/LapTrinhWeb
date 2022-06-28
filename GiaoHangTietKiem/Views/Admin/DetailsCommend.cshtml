@@ -1,0 +1,59 @@
+﻿@model GiaoHangTietKiem.TuyenDuong
+
+@{
+    ViewBag.Title = "DetailsCommend";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>DetailsCommend</h2>
+
+<div>
+    <h4>TuyenDuong</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ThoiGian)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThoiGian)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaKhoBD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaKhoBD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaKhoKT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaKhoKT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaLVC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaLVC)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "EditCommend", new { id = Model.MaTD }) |
+    @Html.ActionLink("Back to List", "IndexCommend")
+</p>
